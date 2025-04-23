@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// firstBlock
 // test commit 2
 
 public class CaastleAndSnackman1sEndMod implements ModInitializer {
