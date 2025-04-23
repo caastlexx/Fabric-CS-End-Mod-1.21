@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block VOIDIUM_ORE_BLOCK = registerBlock( name: "voidium_ore_block",
+    public static final Block VOIDIUM_ORE_BLOCK = registerBlock( "voidium_ore_block",
         new Block(AbstractBlock.Settings.create().strength(10f)
                 .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
