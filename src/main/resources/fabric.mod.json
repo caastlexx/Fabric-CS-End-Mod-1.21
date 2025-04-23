@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "csendmod",
+	"version": "${version}",
+	"name": "Caastle and Snackman1's End Mod",
+	"description": "End Overhaul! (1 new ore)",
+	"authors": [
+		"Caastle",
+		"Snackman1"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/csendmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.caastle.csendmod.CaastleAndSnackman1sEndMod"
+		],
+		"fabric-datagen": [
+			"net.caastle.csendmod.CaastleAndSnackman1sEndModDataGenerator"
+		],
+		"client": [
+			"net.caastle.csendmod.CaastleAndSnackman1sEndModClient"
+		]
+	},
+	"mixins": [
+		"csendmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
