@@ -1,6 +1,7 @@
 package net.caastle.csendmod;
 
 import net.caastle.csendmod.item.ModItemGroups;
+import net.caastle.csendmod.block.ModBlocks;
 import net.caastle.csendmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,5 +19,6 @@ public class CaastleAndSnackman1sEndMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
