@@ -1,7 +1,7 @@
 {
   "item.csendmod.voidium_shard": "Voidium Shard",
-  "block.csendmod.voidium_ore_block": "Block of Voidium Ore"
-
+  "block.csendmod.voidium_block": "Block of Voidium",
+  "block.csendmod.voidium_ore": "Voidium Ore",
   "item.csendmod.voidium_crystal": "Voidium Crystal",
   "item.csendmod.voidium_helmet": "Voidium Helmet",
   "item.csendmod.voidium_chestplate": "Voidium Chestplate",
