@@ -25,17 +25,108 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VOIDIUM_CRYSTAL, RecipeCategory.DECORATIONS, ModBlocks.VOIDIUM_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VOIDIUM_BLOCK)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_CRYSTAL)
+                .pattern(" # ")
+                .pattern("#x#")
+                .pattern(" # ")
+                .input('#', ModItems.VOIDIUM_SHARD)
+                .input('x', Items.ENDER_PEARL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .offerTo(exporter, Identifier.of(CaastleAndSnackman1sEndMod.MOD_ID, "voidium_crystal_from_shards"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_SWORD)
+                .pattern(" # ")
                 .pattern("###")
+                .pattern(" x ")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .input('x', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_PICKAXE)
+                .pattern("###")
+                .pattern(" x ")
+                .pattern(" x ")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .input('x', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_AXE)
+                .pattern("#x#")
+                .pattern("#x#")
+                .pattern(" x ")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .input('x', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_SHOVEL)
+                .pattern("#")
+                .pattern("x")
+                .pattern("x")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .input('x', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_HOE)
+                .pattern("##")
+                .pattern(" x")
+                .pattern(" x")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .input('x', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_HELMET)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_CHESTPLATE)
+                .pattern("# #")
                 .pattern("###")
                 .pattern("###")
                 .input('#', ModItems.VOIDIUM_CRYSTAL)
-                .criterion(hasItem(ModItems.VOIDIUM_CRYSTAL), conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
                 .offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOIDIUM_CRYSTAL, 9)
-                .input(ModBlocks.VOIDIUM_BLOCK)
-                .criterion(hasItem(ModBlocks.VOIDIUM_BLOCK), conditionsFromItem(ModBlocks.VOIDIUM_BLOCK))
-                .offerTo(exporter, Identifier.of(CaastleAndSnackman1sEndMod.MOD_ID, "voidium_crystal_from_voidium_block"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_LEGGINGS)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOIDIUM_BOOTS)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', ModItems.VOIDIUM_CRYSTAL)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.VOIDIUM_CRYSTAL),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
+                .offerTo(exporter);
     }
 }
