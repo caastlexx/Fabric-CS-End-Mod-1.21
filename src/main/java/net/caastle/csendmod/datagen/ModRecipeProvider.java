@@ -25,17 +25,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.VOIDIUM_CRYSTAL, RecipeCategory.DECORATIONS, ModBlocks.VOIDIUM_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.VOIDIUM_BLOCK)
-                .pattern("###")
-                .pattern("###")
-                .pattern("###")
-                .input('#', ModItems.VOIDIUM_CRYSTAL)
-                .criterion(hasItem(ModItems.VOIDIUM_CRYSTAL), conditionsFromItem(ModItems.VOIDIUM_CRYSTAL))
-                .offerTo(exporter);
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOIDIUM_CRYSTAL, 9)
-                .input(ModBlocks.VOIDIUM_BLOCK)
-                .criterion(hasItem(ModBlocks.VOIDIUM_BLOCK), conditionsFromItem(ModBlocks.VOIDIUM_BLOCK))
-                .offerTo(exporter, Identifier.of(CaastleAndSnackman1sEndMod.MOD_ID, "voidium_crystal_from_voidium_block"));
     }
 }
