@@ -29,5 +29,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOIDIUM_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOIDIUM_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOIDIUM_BOOTS));
+
+        itemModelGenerator.register(ModItems.VOIDIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_HOE, Models.HANDHELD);
+
     }
 }

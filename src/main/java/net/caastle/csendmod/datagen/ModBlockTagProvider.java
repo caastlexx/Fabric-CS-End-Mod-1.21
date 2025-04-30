@@ -1,6 +1,7 @@
 package net.caastle.csendmod.datagen;
 
 import net.caastle.csendmod.block.ModBlocks;
+import net.caastle.csendmod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -21,5 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.VOIDIUM_ORE);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_VOIDIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }
