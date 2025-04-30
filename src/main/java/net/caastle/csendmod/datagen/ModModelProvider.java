@@ -23,5 +23,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.VOIDIUM_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOIDIUM_CRYSTAL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.VOIDIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.VOIDIUM_HOE, Models.HANDHELD);
     }
 }
