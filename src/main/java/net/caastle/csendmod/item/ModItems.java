@@ -11,10 +11,18 @@ public class ModItems {
     public static final Item VOIDIUM_SHARD = registerItem("voidium_shard", new Item(new Item.Settings()));
     public static final Item VOIDIUM_CRYSTAL = registerItem("voidium_crystal", new Item(new Item.Settings()));
 
-    public static final Item VOIDIUM_HELMET = registerItem( "voidium_helmet", new Item(new Item.Settings()));
-    public static final Item VOIDIUM_CHESTPLATE = registerItem( "voidium_chestplate", new Item(new Item.Settings()));
-    public static final Item VOIDIUM_LEGGINGS = registerItem( "voidium_leggings", new Item(new Item.Settings()));
-    public static final Item VOIDIUM_BOOTS = registerItem( "voidium_boots", new Item(new Item.Settings()));
+    public static final Item VOIDIUM_HELMET = registerItem("voidium_helmet",
+            new ArmorItem(ModArmorMaterials.VOIDIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))));
+    public static final Item VOIDIUM_CHESTPLATE = registerItem("voidium_chestplate",
+            new ArmorItem(ModArmorMaterials.VOIDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))));
+    public static final Item VOIDIUM_LEGGINGS = registerItem("voidium_leggings",
+            new ArmorItem(ModArmorMaterials.VOIDIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))));
+    public static final Item VOIDIUM_BOOTS = registerItem("voidium_boots",
+            new ArmorItem(ModArmorMaterials.VOIDIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     public static final Item VOIDIUM_SWORD = registerItem("voidium_sword",
             new SwordItem(ModToolMaterials.VOIDIUM_CRYSTAL, new Item.Settings()
