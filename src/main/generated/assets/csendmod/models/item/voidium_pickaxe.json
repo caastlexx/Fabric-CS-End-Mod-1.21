@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "csendmod:item/voidium_pickaxe"
+  }
+}
