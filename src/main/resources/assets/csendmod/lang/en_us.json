@@ -10,6 +10,9 @@
   "item.csendmod.voidium_sword": "Voidium Sword",
   "item.csendmod.voidium_pickaxe": "Voidium Pickaxe",
   "item.csendmod.voidium_axe": "Voidium Axe",
+  "block.csendmod.fent_block": "Block of Fentanyl",
   "item.csendmod.voidium_shovel": "Voidium Shovel",
-  "item.csendmod.voidium_hoe": "Voidium Hoe"
+  "item.csendmod.voidium_hoe": "Voidium Hoe",
+
+  "painting.csendmod.saw_them.title": "Saw Them"
 }

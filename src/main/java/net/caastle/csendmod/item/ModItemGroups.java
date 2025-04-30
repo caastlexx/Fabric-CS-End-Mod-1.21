@@ -1,6 +1,7 @@
 package net.caastle.csendmod.item;
 
 import net.caastle.csendmod.CaastleAndSnackman1sEndMod;
+import net.caastle.csendmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOIDIUM_SHARD);
                         entries.add(ModItems.VOIDIUM_CRYSTAL);
+
+                        entries.add(ModBlocks.VOIDIUM_BLOCK);
+                        entries.add(ModBlocks.VOIDIUM_ORE);
 
                         entries.add(ModItems.VOIDIUM_HELMET);
                         entries.add(ModItems.VOIDIUM_CHESTPLATE);

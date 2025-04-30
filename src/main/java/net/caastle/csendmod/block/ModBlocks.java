@@ -1,6 +1,7 @@
 package net.caastle.csendmod.block;
 
 import net.caastle.csendmod.CaastleAndSnackman1sEndMod;
+import net.caastle.csendmod.block.custom.MagicBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -28,6 +29,9 @@ public class ModBlocks {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CaastleAndSnackman1sEndMod.MOD_ID, name), block);
     }
+
+    public static final Block FENT_BLOCK = registerBlock("fent_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(CaastleAndSnackman1sEndMod.MOD_ID, name),
