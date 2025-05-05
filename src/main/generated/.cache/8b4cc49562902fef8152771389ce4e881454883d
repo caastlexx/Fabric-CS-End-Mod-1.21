@@ -1,0 +1,4 @@
+// 1.21	2025-05-05T09:37:42.6617263	Caastle and Snackman1's End Mod/Tags for minecraft:block
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\csendmod\tags\block\needs_voidium_tool.json
+b587a774ebe08eac5587c80b100cdf7f85af6c46 data\minecraft\tags\block\mineable\pickaxe.json
+91566131e6a2f7af3a1de4e410b8bf111ea1d21f data\minecraft\tags\block\needs_diamond_tool.json

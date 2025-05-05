@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "csendmod:voidium_crystal"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    "###",
+    " x "
+  ],
+  "result": {
+    "count": 1,
+    "id": "csendmod:voidium_sword"
+  }
+}
