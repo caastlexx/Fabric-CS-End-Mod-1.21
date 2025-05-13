@@ -18,15 +18,15 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
+
     public static final RegistryKey<PlacedFeature> VOIDIUM_ORE_PLACED_KEY = registerKey("voidium_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, VOIDIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VOIDIUM_ORE_KEY),
-                ModOrePlacement.modifiersWithCount( 14,
+                ModOrePlacement.modifiersWithCount(14,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(40))));
-
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
