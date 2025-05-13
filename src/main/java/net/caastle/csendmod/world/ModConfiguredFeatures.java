@@ -30,13 +30,6 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.VOIDIUM_ORE.getDefaultState()));
 
         register(context, VOIDIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidiumOres, 9));
-
-    public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
-
-        List<OreFeatureConfig.Target> overworldPinkGarnetOres =
-                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.VOIDIUM_ORE.getDefaultState()));
-
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
