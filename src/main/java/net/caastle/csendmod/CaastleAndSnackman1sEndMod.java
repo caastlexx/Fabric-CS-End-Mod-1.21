@@ -3,6 +3,7 @@ package net.caastle.csendmod;
 import net.caastle.csendmod.item.ModItemGroups;
 import net.caastle.csendmod.block.ModBlocks;
 import net.caastle.csendmod.item.ModItems;
+import net.caastle.csendmod.util.ChestLootTableProvider;
 import net.caastle.csendmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,5 +24,6 @@ public class CaastleAndSnackman1sEndMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
+		ChestLootTableProvider.modifyLootTables();
 	}
 }
