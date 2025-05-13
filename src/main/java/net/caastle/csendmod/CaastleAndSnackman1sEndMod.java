@@ -21,5 +21,7 @@ public class CaastleAndSnackman1sEndMod implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
