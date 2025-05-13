@@ -6,6 +6,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
@@ -19,6 +20,16 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> VOIDIUM_ORE_KEY = registerKey("voidium_ore");
+
+
+    public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+
+        RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
+
+        List<OreFeatureConfig.Target> voidiumOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.VOIDIUM_ORE.getDefaultState()));
+
+        register(context, VOIDIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidiumOres, 9));
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);

@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     VOIDIUM_CRYSTAL(ModTags.Blocks.INCORRECT_FOR_VOIDIUM_TOOL,
-            1300, 12.0F, 4.0F, 24, () -> Ingredient.ofItems(ModItems.VOIDIUM_CRYSTAL));
+            1300, 12.0F, 4.0F, 22, () -> Ingredient.ofItems(ModItems.VOIDIUM_CRYSTAL));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
