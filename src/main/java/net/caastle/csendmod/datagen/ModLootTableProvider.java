@@ -28,7 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.VOIDIUM_BLOCK);
-        addDrop(ModBlocks.VOIDIUM_ORE, oreDrops(ModBlocks.VOIDIUM_ORE, ModItems.VOIDIUM_CRYSTAL));
+        addDrop(ModBlocks.VOIDIUM_ORE, oreDrops(ModBlocks.VOIDIUM_ORE, ModItems.VOIDIUM_SHARD));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

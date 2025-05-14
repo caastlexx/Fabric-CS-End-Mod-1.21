@@ -31,7 +31,7 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> voidiumOres =
                 List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.VOIDIUM_ORE.getDefaultState()));
 
-        register(context, VOIDIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidiumOres, 9));
+        register(context, VOIDIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(voidiumOres, 3));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
