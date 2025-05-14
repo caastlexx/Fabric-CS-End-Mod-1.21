@@ -19,7 +19,6 @@ public class CaastleAndSnackman1sEndMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
-		ModWorldGeneration.generateModWorldGen();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
