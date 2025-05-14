@@ -23,7 +23,7 @@ public class ModBlocks {
 
     public static final Block VOIDIUM_ORE = registerBlock("voidium_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
-                    AbstractBlock.Settings.create().strength(3f).requiresTool()));
+                    AbstractBlock.Settings.create().hardness(3f).resistance(1200f).requiresTool()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
