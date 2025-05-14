@@ -34,5 +34,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VOIDIUM_CHESTPLATE)
                 .add(ModItems.VOIDIUM_LEGGINGS)
                 .add(ModItems.VOIDIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.VOIDIUM_HELMET)
+                .add(ModItems.VOIDIUM_CHESTPLATE)
+                .add(ModItems.VOIDIUM_LEGGINGS)
+                .add(ModItems.VOIDIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.VOIDIUM_HELMET)
+                .add(ModItems.VOIDIUM_CHESTPLATE)
+                .add(ModItems.VOIDIUM_LEGGINGS)
+                .add(ModItems.VOIDIUM_BOOTS);
     }
 }
